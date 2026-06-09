@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Road Safety B1 English Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #f0f8ff;
+        }
+        .quiz-container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        .question {
+            margin: 20px 0;
+            padding: 15px;
+            background: #e8f4f8;
+            border-radius: 5px;
+        }
+        .question-title {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        .options label {
+            display: block;
+            margin: 8px 0;
+            padding: 8px;
+            background: white;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .options label:hover {
+            background: #d4e8f1;
+        }
+        button {
+            background: #3498db;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 20px;
+        }
+        button:hover {
+            background: #2980b9;
+        }
+        .result {
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            background: #2c3e50;
+            color: white;
+            border-radius: 5px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>🚗 Road Safety B1 Quiz</h1>
+        <p style="text-align: center;">Test your knowledge about bad driving! (15 simple questions)</p>
+        
+        <form id="quizForm">
+            <div class="question">
+                <div class="question-title">1. What is bad about texting while driving?</div>
+                <div class="options">
+                    <label><input type="radio" name="q1" value="wrong">A. Your phone breaks</label>
+                    <label><input type="radio" name="q1" value="correct">B. You do not look at the road</label>
+                    <label><input type="radio" name="q1" value="wrong">C. You are hungry</label>
+                </div>
+            </div>
+            
+            <div class="question">
+                <div class="question-title">2. Why is drinking alcohol before driving dangerous?</div>
+                <div class="options">
+                    <label><input type="radio" name="q2" value="wrong">A. Your car is slow</label>
+                    <label><input type="radio" name="q2" value="correct">B. You cannot think clearly</label>
+                    <label><input type="radio" name="q2" value="wrong">C. You are tired</label>
+                </div>
+            </div>
+            
+            <div class="question">
+                <div class="question-title">3. What happens when you drive too fast?</div>
+                <div class="options">
+                    <label><input type="radio" name="q3" value="correct">A. You can crash easily</label>
+                    <label><input type="radio" name="q3" value="wrong">B. You save time</label>
+                    <label><input type="radio" name="q3" value="wrong">C. Your car is clean</label>
+                </div>
+            </div>
+            
+            <div class="question">
+                <div class="question-title">4. Why should you wear a seatbelt?</div>
+                <div class="options">
+                    <label><input type="radio" name="q4" value="wrong">A. It is comfortable</label>
+                    <label><input type="radio" name="q4" value="correct">B. It keeps you safe in a crash</label>
+                    <label><input type="radio" name="q4" value="wrong">C. It looks good</label>
+                </div>
+            </div>
+            
+            <div class="question">
+                <div class="question-title">5. What is bad about talking on the phone while driving?</div>
+                <div class="options">
+                    <label><input type="radio" name="q5" value="wrong">A. You talk too much</label>
+                    <label><input type="radio" name="q5" value="correct">B. You do not pay attention</label>
+                    <label><input type="radio" name="q5" value="wrong">C. Your friend is angry</label>
+                </div>
+            </div>
+            
+            <div class="question">
+                <div class="question-title">6. Why is it bad to drive when you are tired?</div>
+                <div class="options">
+                    <label><input type="radio" name="q6" value="correct">A. You can sleep and crash</label>
+                    <label><input type="radio" name="q6" value="wrong">B. Your car breaks</label>
+                    <label><input type="radio" name="q6" value="wrong">C. You are late</label>
+                </div>
+            </div>
+            
+            <div class="question">
+                <div class="question-title">7. What should you do before driving?</div>
+                <div class="options">
+                    <label><input type="radio" name="q7" value="wrong">A. Watch TV</label>
+                    <label><input type="radio" name="q7" value="correct">B. Check your car is safe</label>
+                    <label><input type="radio" name="q7" value="wrong">C. Eat a big meal</label>
+                </div>
+            </div>
+            
+            <div class="question">
+                <div class="question-title">8. Why is using the radio bad while driving?</div>
+                <div class="options">
+                    <label><input type="radio" name="q8" value="wrong">A. The music is loud</label>
+                    <label><input type="radio" name="q8" value="wrong">B. Your ears hurt</label>
+                    <label><input type="radio" name="q8" value="correct">C. You look at the radio, not the road</label>
+                </div>
+            </div>
+            
+            <div class="question">
+                <div class="question-title">9. What happens if you do not stop at a red light?</div>
+                <div class="options">
+                    <label><input type="radio" name="q9" value="wrong">A. You are faster</label>
+                    <label><input type="radio" name="q9" value="correct">B. You can hit another car</label>
+                    <label><input type="radio" name="q9" value="wrong">C. Nothing bad</label>
+                </div>
+            </div>
+            
+            <div class="question">
+                <div class="question-title">10. Why is walking near the car dangerous?</div>
+                <div class="options">
+                    <label><input type="radio" name="q10" value="wrong">A. You get tired</label>
+                    <label><input type="radio" name="q10" value="wrong">B. The car is slow</label>
+                    <label><input type="radio" name="q10" value="correct">C. People can be hit</label>
+                </div>
+            </div>
+            
+            <div class="question">
+                <div class="question-title">11. What is bad about eating while driving?</div>
+                <div class="options">
+                    <label><input type="radio" name="q11" value="wrong">A. You are hungry</label>
+                    <label><input type="radio" name="q11" value="wrong">C. Food is expensive</label>
+                    <label><input type="radio" name="q11" value="correct">B. One hand is not on the wheel</label>
+                </div>
+            </div>
+            
+            <div class="question">
+                <div class="question-title">12. Why should you not drive with many friends talking?</div>
+                <div class="options">
+                    <label><input type="radio" name="q12" value="wrong">A. Friends are loud</label>
+                    <label><input type="radio" name="q12" value="wrong">C. Friends are angry</label>
+                    <label><input type="radio" name="q12" value="correct">B. You do not listen to the road</label>
+                </div>
+            </div>
+            
+            <div class="question">
+                <div class="question-title">13. What happens when you drive in the rain fast?</div>
+                <div class="options">
+                    <label><input type="radio" name="q13" value="wrong">A. You are dry</label>
+                    <label><input type="radio" name="q13" value="wrong">B. Rain is good</label>
+                    <label><input type="radio" name="q13" value="correct">C. Car can slip and crash</label>
+                </div>
+            </div>
+            
+            <div class="question">
+                <div class="question-title">14. Why is it bad to look at pictures in your car?</div>
+                <div class="options">
+                    <label><input type="radio" name="q14" value="wrong">A. Pictures are ugly</label>
+                    <label><input type="radio" name="q14" value="wrong">C. Pictures fall</label>
+                    <label><input type="radio" name="q14" value="correct">B. You do not see the road</label>
+                </div>
+            </div>
+            
+            <div class="question">
+                <div class="question-title">15. What should you do if you are angry?</div>
+                <div class="options">
+                    <label><input type="radio" name="q15" value="wrong">B. Drive fast</label>
+                    <label><input type="radio" name="q15" value="wrong">C. Yell and drive</label>
+                    <label><input type="radio" name="q15" value="correct">A. Wait and do not drive</label>
+                </div>
+            </div>
+            
+            <button type="button" onclick="checkQuiz()">See My Score</button>
+            
+            <div id="result" class="result">
+                <h2>Your Score: <span id="score"></span>/15</h2>
+                <p id="message"></p>
+            </div>
+        </form>
+    </div>
+    
+    <script>
+        function checkQuiz() {
+            var score = 0;
+            var total = 15;
+            
+            for (var i = 1; i <= total; i++) {
+                var questionName = 'q' + i;
+                var options = document.getElementsByName(questionName);
+                for (var j = 0; j < options.length; j++) {
+                    if (options[j].checked && options[j].value === 'correct') {
+                        score++;
+                    }
+                }
+            }
+            
+            var resultDiv = document.getElementById('result');
+            var scoreSpan = document.getElementById('score');
+            var messageP = document.getElementById('message');
+            
+            scoreSpan.textContent = score;
+            resultDiv.style.display = 'block';
+            
+            if (score >= 12) {
+                messageP.textContent = '🎉 Great! You know road safety well!';
+            } else if (score >= 😎 {
+                messageP.textContent = '👍 Good! Learn more about safe driving.';
+            } else {
+                messageP.textContent = '⚠️ Please learn about road safety. Stay safe!';
+            }
+        }
+    </script>
+</body>
+</html>
